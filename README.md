@@ -67,31 +67,35 @@ Then, with one command (docker compose up), Docker sets up everything at once.
 
 After all that on a web browser run localhost and setup your wordpress.
 
-In order to make your wordpress to run even when you have closed the terminal you can use:
+To make your WordPress run even when you have closed the terminal, you can use:
 
 ```bash
 sudo docker-compose up -d
 ```
-To stop it from running  we use:
+To stop it from running,  we use:
 
 ```bash
 sudo docker-compose down
 ```
-To show services running in docker containers we use:
+To show services running in Docker containers, we use:
 
 ```bash
 sudo docker ps
 ```
 
-Now you can navigate to the directory that you want to build the plugin and on the directory where you installed wordpress in docker you can access the shell using:
+Now you can navigate to the directory that you want to build the plugin, and in the directory where you installed WordPress in Docker, you can access the shell using:
 
 ```bash
 sudo docker exec -it [CONTAINER ID PORTS] bash
 ```
 
-On the shell we can use `ls -lah` to view the wordpress files, then navigate to `wp-content` and then to `plugins`. This is where we are going to put our plugin.
+On the shell, we can use `ls -lah` to view the WordPress files, then navigate to `wp-content` and then to `plugins`. This is where we are going to put our plugin.
 
-At this point we are going to read a documentation on [plugin handbook](https://developer.wordpress.org/plugins/intro/) and make our wordpress plugin.
+At this point, we are going to read the documentation on [plugin handbook](https://developer.wordpress.org/plugins/intro/) and make our wordpress plugin.
+
+On the shell that we have, we are going to add our plugin by saving the file as PHP using notebook of your choice.
+
+
 
 
 
